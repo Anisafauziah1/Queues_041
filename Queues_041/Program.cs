@@ -26,6 +26,22 @@ namespace Queues_041
                 Console.WriteLine("\nQueue overflow\n");
                 return;
             }
+            /* This following statement checks whether the queue is empry if the queue
+             *  , then the value of the REAR and FRONT variabels is set to 0 */
+            if (FRONT == -1)
+            {
+                FRONT = 0;
+                REAR = 0;
+            }
+            else
+            {
+                /* If REAR is at the last position of the array, then the value of
+                 * REAR is set to 0 that corresponds to the first position of the array. */
+                if (REAR == max - 1)
+                    REAR = 0;
+                else
+                    /* If REAR is not at the last position, then its value is incremented by one */
+                    REAR = REAR + 1;
             }
         }
         static void Main(string[] args)
