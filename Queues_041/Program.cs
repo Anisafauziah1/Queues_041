@@ -104,10 +104,20 @@ namespace Queues_041
                 }
                 /* set the FRONT position to the first element of the array. */
                 FRONT_position = 0;
+                /* traverses the array till the last element present in the queue. */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "    ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
         {
+            Queue queue = new Queue();
+            char ch;
+            while (true)
         }
     }
 }
