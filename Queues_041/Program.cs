@@ -144,6 +144,11 @@ namespace Queues_041
                                 queue.remove();
                             }
                             break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
                     }
                 }
             }
