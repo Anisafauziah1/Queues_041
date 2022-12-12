@@ -149,6 +149,15 @@ namespace Queues_041
                                 queue.display();
                             }
                             break;
+                        case '4':
+                            {
+                                return;
+                                default:
+                                {
+                                    Console.WriteLine("Invalid option !!");
+                                }
+                                break;
+                            }
                     }
                 }
             }
